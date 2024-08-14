@@ -12,7 +12,7 @@ HMpics = ["  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========",
         "  +---+\n  |   |\n  O   |\n /|\  |\n /    |\n      |\n=========",
 
         "  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n========="]
-words = ["code", "python", "program", "computer", "variable", "module", "string", "input", "output", "iteration", "set", "subroutine", "boolean", "data", "list", "function", "operator", "parameter", "statement", "github"]
+words = ["code", "python", "program", "computer", "variable", "module", "string", "input", "output", "iteration", "set", "subroutine", "boolean", "data", "list", "function", "operator", "parameter", "statement", "repository"]
 def hangman():
     word = random.choice(words)
     guessedletters = []
