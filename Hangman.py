@@ -12,7 +12,7 @@ HMpics = ["  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========",
         "  +---+\n  |   |\n  O   |\n /|\  |\n /    |\n      |\n=========",
 
         "  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n========="]
-words = ["code", "python", "hangman", "programming", "computer"]
+words = ["code", "python", "programming", "computer", "variable", "module", "string", "input", "output", "iteration", "set", "subroutine", "boolean", "data", "list", "function", "operator", "parameter", "statement", "github"]
 def hangman():
     word = random.choice(words)
     guessedletters = []
@@ -36,8 +36,10 @@ def hangman():
             print("Nope")
             attempts += 1
     if ''.join(correctletters) == word:
-        print("You got it! The word was:", (word))
+        print("You got it!")
+        print("The word was:", (word))
     else:
         print(HMpics[attempts])
-        print("He died rip 😦 The word was:", (word))
+        print("He died rip :(")
+        print("The word was:", (word))
 hangman()
